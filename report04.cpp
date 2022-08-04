@@ -3,9 +3,16 @@
 
 int main(){
 
-    Cirle c = {0.0, 0.0, 1.0};
-    Rectangle r = {0.0, 0.0, 1.0, 2.0};
+    Circle c(0.0, 0.0, 1.0);
+    Rectangle r(0.0, 0.0, 1.0, 2.0);
+
+    Circle2 c2(0.0, 0.0, 1.0);
+    Rectangle2 r2(0.0, 0.0, 1.0, 2.0);
     
-    std::cout << calcCircleArea(c.radius) << std::endl;
-    std::cout << calcRectangleArea(r.w, r.h) << std::endl;
+    std::cout << c.calcArea() << std::endl;
+    std::cout << r.calcArea() << std::endl;
+
+    std::cout << c2.calcArea() << std::endl;
+    std::cout << r2.calcArea() << std::endl;
+
 }
